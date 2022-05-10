@@ -12,7 +12,7 @@ export default {
   transactionCurrentPage: 1,
   transactionTotalPage: 2,
   transactionInfo: null,
-  baseUrl: "http://fbn.oxfordagrovest.com/api/",
+  baseUrl: "https://fbn.oxfordagrovest.com/api/",
 
   // LOADING
   pageLoading: {
