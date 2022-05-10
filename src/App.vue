@@ -21,18 +21,6 @@ import "@/assets/css/custom.css";
 import Sidebar from "./components/sidebar/Sidebar.vue";
 import AllModal from "./components/modal/AllModal.vue";
 export default {
-  computed: {
-    isLoggedInRoute() {
-      let current = false;
-      if (this.$router.history.current.meta.requiresAuth) {
-        current = true;
-      }
-
-      // console.log(this.$router.history.current.meta.requiresAuth);
-
-      return current;
-    },
-  },
   components: {
     Sidebar,
     AllModal,
