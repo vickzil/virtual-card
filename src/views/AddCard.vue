@@ -4,6 +4,9 @@
       <div class="page-title">
         <h2>Add Card</h2>
       </div>
+      <a href="javascript:;" @click="$router.push({ name: 'AllCards' })"
+        >All Card <i class="bx bx-right-arrow-alt"></i
+      ></a>
     </div>
     <div class="after-page-header">
       <!-- <WalletBalance /> -->
@@ -40,5 +43,18 @@ export default {
 <style scoped>
 .after-page-header {
   overflow-x: hidden;
+}
+
+.page-header a {
+  display: none;
+}
+
+@media screen and (max-width: 580px) {
+  .page-header a {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    font-weight: bold;
+  }
 }
 </style>
